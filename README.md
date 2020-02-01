@@ -1,3 +1,3 @@
-# Bash Script For Working Daily 
-## content script i using in my work
+# tools install in fedora silverblue
+content script i using in my work
 
