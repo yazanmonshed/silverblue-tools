@@ -8,7 +8,7 @@
 # gcc : is compiler for C/C++
 # neofetch : is fast highly customizble system info script
 # nl : funy commad line 
-
+# Go : go programing language 
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -36,7 +36,10 @@ sudo rpm-ostree install neofetch
 sudo rpm-ostree install nl
 ;;
 "all")
-sudo rpm-ostree install vim nano task podman gcc vmstat neofetch
+sudo rpm-ostree install vim nano task podman gcc vmstat neofetch golang
+;;
+"golang")
+sudo rpm-ostree install golang
 ;;
 *)
 echo "sorry, tool name not found!"
