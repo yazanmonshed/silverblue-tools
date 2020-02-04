@@ -9,6 +9,7 @@
 # neofetch : is fast highly customizble system info script
 # nl : funy commad line 
 # Go : go programing language 
+# zsh: shell like bash
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -36,10 +37,13 @@ sudo rpm-ostree install neofetch
 sudo rpm-ostree install nl
 ;;
 "all")
-sudo rpm-ostree install vim nano task podman gcc vmstat neofetch golang
+sudo rpm-ostree install vim nano task podman gcc vmstat neofetch golang zsh
 ;;
 "golang")
 sudo rpm-ostree install golang
+;;
+"zsh")
+sudo rpm-ostree install zsh
 ;;
 *)
 echo "sorry, tool name not found!"
