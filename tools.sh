@@ -9,7 +9,8 @@
 # neofetch : is fast highly customizble system info script
 # nl : funy commad line 
 # Go : go programing language 
-# zsh: shell like bash
+# zsh: shell like bash 
+# sdcv: doc from commmand line 
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -44,6 +45,9 @@ sudo rpm-ostree install golang
 ;;
 "zsh")
 sudo rpm-ostree install zsh
+;;
+"sdcv")
+sudo rpm-ostree install sdcv
 ;;
 *)
 echo "sorry, tool name not found!"
