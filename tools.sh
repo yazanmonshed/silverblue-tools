@@ -11,6 +11,8 @@
 # Go : go programing language 
 # zsh: shell like bash 
 # sdcv: doc from commmand line 
+# powerline: mange shell prompot 
+#tmux: muiltplixer for command line
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -48,6 +50,12 @@ sudo rpm-ostree install zsh
 ;;
 "sdcv")
 sudo rpm-ostree install sdcv
+;;
+"powerline")
+sudo rpm-ostree install powerline powerline-fonts tmux-powerline vim-powerline
+;;
+"tmux")
+sudo rpm-ostree install tmux
 ;;
 *)
 echo "sorry, tool name not found!"
