@@ -12,7 +12,8 @@
 # zsh: shell like bash 
 # sdcv: doc from commmand line 
 # powerline: mange shell prompot 
-#tmux: muiltplixer for command line
+# tmux: muiltplixer for command line
+# tree: list tree dirctory or files
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -55,7 +56,10 @@ sudo rpm-ostree install sdcv
 sudo rpm-ostree install powerline powerline-fonts tmux-powerline vim-powerline
 ;;
 "tmux")
-sudo rpm-ostree install tmux
+sudo rpm-ostree install tmux 
+;;
+"tree")
+sudo rpm-ostree install tree 
 ;;
 *)
 echo "sorry, tool name not found!"
