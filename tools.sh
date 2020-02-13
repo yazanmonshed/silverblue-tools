@@ -14,6 +14,7 @@
 # powerline: mange shell prompot 
 # tmux: muiltplixer for command line
 # tree: list tree dirctory or files
+# ftp : file transfer protocol for download from internet
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -45,6 +46,9 @@ sudo rpm-ostree install vim nano task podman gcc vmstat neofetch golang zsh
 ;;
 "golang")
 sudo rpm-ostree install golang
+;;
+"ftp")
+sudo rpm-ostree install ftp 
 ;;
 "zsh")
 sudo rpm-ostree install zsh
