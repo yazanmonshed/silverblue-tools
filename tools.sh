@@ -15,6 +15,7 @@
 # tmux: muiltplixer for command line
 # tree: list tree dirctory or files
 # ftp : file transfer protocol for download from internet
+#vagrant: for create vrtual enviroment for developer
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -46,6 +47,9 @@ sudo rpm-ostree install vim nano task podman gcc vmstat neofetch golang zsh
 ;;
 "golang")
 sudo rpm-ostree install golang
+;;
+"vagrant")
+sudo rpm-ostree install vagrant 
 ;;
 "ftp")
 sudo rpm-ostree install ftp 
