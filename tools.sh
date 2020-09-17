@@ -15,7 +15,8 @@
 # tmux: muiltplixer for command line
 # tree: list tree dirctory or files
 # ftp : file transfer protocol for download from internet
-#vagrant: for create vrtual enviroment for developer
+# vagrant: for create vrtual enviroment for developer
+# crictl CLI container runtime that allow developers to debug runtime 
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -68,6 +69,9 @@ sudo rpm-ostree install tmux
 ;;
 "tree")
 sudo rpm-ostree install tree 
+;;
+"crictl")
+sudo rpm-ostree install crictl
 ;;
 *)
 echo "sorry, tool name not found!"
