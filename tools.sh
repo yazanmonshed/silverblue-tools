@@ -17,6 +17,7 @@
 # ftp : file transfer protocol for download from internet
 # vagrant: for create vrtual enviroment for developer
 # crictl CLI container runtime that allow developers to debug runtime 
+# golang: programing language 
 read -p "type name tool to install it " tool
 case $tool in 
 "vim")
@@ -73,6 +74,9 @@ sudo rpm-ostree install tree
 "crictl")
 sudo rpm-ostree install crictl
 ;;
+"golang")
+  sudo rpm-ostree install golang
+  ;;
 *)
 echo "sorry, tool name not found!"
 esac
